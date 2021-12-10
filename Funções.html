@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+	<script>
+		function testes(){
+			// Executando quando chamar a função.
+			console.log("Chamando a função testes!");
+		}
+
+		function testes2(nome	, idade) {
+			console.log("O nome é: " + nome);
+			console.log("O idade é: " + idade);
+			console.log("--------------------------");
+		}
+
+		// testes();
+		// testes2("Leandro Simonato", 32);
+		// testes2("Ana Carolina", 37);
+
+		// function pegaNome(par) {
+		// 	return "Leandro Simonato";
+		// 	console.log("testes");
+		// }
+		// var nome = pegarNome();
+		// console.log(nome);
+
+		function pegaNome(parametro) {
+			if (parametro == 1) {
+				return "Leandro Simonato";
+			} else {
+				return "Ana Carolina";
+			}
+		}
+
+		var nome = pegarNome(1);
+		console.log(nome);
+
+	</script>
+</body>
+</html>
