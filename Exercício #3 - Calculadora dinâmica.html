@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<script>
+		// Aplicação calculadora dinâmica.
+		/*
+			* Queremos um número inicial.
+			* Queremos un sinal (tipo de operação).
+			* Quero um número final.
+		*/
+
+		var numeroInicial = prompt("Informe o primeiro número...");
+		var sinal = prompt("Informe o sinal da sua operação...");
+
+		while(sinal != '-' && sinal != '+' && sinal != '*' && sinal != '/') {
+			alert('Por favor informe um sinal valido!')
+			sinal = prompt("Informe o sinal da sua operação...");
+		}
+
+		var numeroFinal = prompt("Informe o número final...");
+
+		// Funções para converter para número uma string.
+		numeroIncial = parseInt(numeroInicial);
+		numeroFinal = parseInt(numeroFinal);
+
+		var resultadoFinal = 0;
+			if (sinal == '+') {
+				resultadoFinal = numeroIncial + numeroFinal;
+		  } else if (sinal == '-') {
+				resultadoFinal = numeroIncial - numeroFinal;
+		  } else if (sinal == '/') {
+				resultadoFinal = numeroIncial / numeroFinal;
+			} else if (sinal == '*') {
+				resultadoFinal = numeroIncial * numeroFinal;
+			}
+
+		alert('O resultado final é: ', + resultadoFinal);
+	</script>
+</body>
+</html>
